@@ -1,12 +1,7 @@
 <div class="sidebar-sticky">
     <div class="sidebar-about" style="margin-bottom: 10px;">
 
-        <!--블로그타이틀-->
-        <div class="sidebartitle" style="margin-bottom: 95px;">
-            <a class="sidebar-title" href="{{ '/' | relative_url }}">
-                <h2 class="h1">{{ site.short_title | default:site.title }}</h2>
-            </a>
-        </div>
+     
         <!--블로그 간단한 설명-->
         {% assign text = site.tagline | default:site.description %}
         {% if text %}
@@ -27,7 +22,12 @@
         <img src="{% include_cached smart-url url=site.logo %}" class="avatar" alt="{{ site.short_title | default:site.title }}" width="130" height="130" loading="lazy" />
     </a>
     {% endif %}
-
+    <!--블로그타이틀-->
+    <div class="sidebartitle" style="margin-bottom: 95px;">
+        <a class="sidebar-title" href="{{ '/' | relative_url }}">
+            <h2 class="h1">{{ site.short_title | default:site.title }}</h2>
+        </a>
+    </div>
     <!--소셜바-->
     {% assign author = site.data.authors.first[1] | default:site.author %}
     <div class="sidebar-social">
