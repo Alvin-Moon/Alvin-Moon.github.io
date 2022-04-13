@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-url:                   https://Muning624.github.io
+url:                   https://alvin-Moon.github.io/Muning624.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -47,12 +47,20 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
+
   - title:             About
     url:               /about/
+  - title:             Example1
+    url:               /example1/ 
+  - title:             Example2
+    url:               /example2/ 
+  - title:             Subcat
+    url:               /subcat/
+    submenu:
+      - title:         Test1
+        url   :         /test1/ 
+      - title:         Test2
+        url   :         /test2/ 
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -78,7 +86,7 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9
 
 
