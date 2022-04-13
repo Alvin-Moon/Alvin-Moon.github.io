@@ -32,8 +32,13 @@
   border: 1rem solid var(--body-bg);
   transition: border-color 1s ease;
   margin-top: 5px !important;
-  margin-right: 5px !important; 
+  margin-right: 5px !important;
   width: 140px !important;
   height:140px !important;
 
+}
+
+
+.content a:not(.btn):not(.no-hover) {
+    text-decoration-color: rgb(255, 18, 18 / 50%);
 }
